@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elevators</title>
+    <link href="style.css" type="text/css"  rel="stylesheet" />
+</head>
+<body>
+    <div class="elevators-wrapper">
+
+        <!-- elevators-groups start -->
+        <div class="elevators-groups">
+            <div class="elevator-wrap">
+                <div class="elevator-poll">
+                    <div class="elevator elevator-one" id="elevator-one">1</div>
+                </div>
+                <div class="elevator-poll">
+                    <div class="elevator elevator-two" id="elevator-two">2</div>
+                </div>
+                <div class="elevator-poll">
+                    <div class="elevator elevator-three" id="elevator-three">3</div>
+                </div>
+            </div>
+        </div>
+        <!-- elevators-groups end -->
+
+        <!-- elevator-persons start -->
+        <div class="person-groups">
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(20,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(20,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" >20</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(19,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(19,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(19)">19</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(18,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(18,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(18)">18</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(17,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(17,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(17)">17</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(16,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(16,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(16)">16</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(15,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(15,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(15)">15</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(14,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(14,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(14)">14</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(13,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(13,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(13)">13</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(12,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(12,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(12)">12</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(11,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(11,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(11)">11</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(10,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(10,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(10)">10</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(9,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(9,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(9)">9</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(8,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(8,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(8)">8</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(7,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(7,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(7)">7</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(6,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(6,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(6)">6</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(5,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(5,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(5)">5</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(4,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(4,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(4)">4</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(3,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(3,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(3)">3</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(2,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(2,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(2)">2</div>
+            </div>
+
+            <div class="person-wrap">
+                <div class="person">
+                    <img src="images/user_avatar.png" width="50" height="50" />
+                </div>
+                <div class="elevator-button-wrap">
+                    <div class="elevator-button-up" onClick="orderElevator(1,1)"></div>
+                    <div class="elevator-button-down" onClick="orderElevator(1,0)"></div>
+                </div>
+                <div class="elevator-floor-indicator" onClick="orderElevator(1)">1</div>
+            </div>
+
+        </div>
+        <!-- elevator-persons end -->
+    </div>
+
+<script src="elevator_script.js"></script>
+</body>
+</html>
