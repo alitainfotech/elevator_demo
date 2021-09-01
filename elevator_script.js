@@ -9,6 +9,7 @@ var elevatorTwoDirection = 1;
 
 var elevatorThreeFloor = 0;
 var elevatorThreeDirection = 1;
+var nearest_floor = 0;
 
 var marginArray = [];
 marginArray[20] = 0;
@@ -37,13 +38,14 @@ var elevator1_used_rank = 0;
 var elevator2_used_rank = 0;
 var elevator3_used_rank = 0;
 
+
 var myVar = null;
 function orderElevator(floor,direction){
 	this.requestedQueue.push({
         floor:floor,
         direction:direction
     });
-	var nearest_floor = 0;
+	
 	var selectedElevetor = 0;
 	var selectedElevetor = this.elevators[Math.floor(Math.random()*this.elevators.length)];
 	if(elevatorOneFloor < nearest_floor){
@@ -57,10 +59,16 @@ function orderElevator(floor,direction){
 		selectedElevetor = 3;
 	}
 
+    if(elevatorOneFloor == floor || elevatorTwoFloor == floor || elevatorThreeFloor == floor){
+        alert('lift is already on the floor;')
+        return false;
+    }
+
 	var consider_direction = 0;
 	if(nearest_floor > floor){
 		consider_direction = 1;
 	}
+
 	// console.log('selectedElevetor', consider_direction);
 	var queueLength = this.requestedQueue.length;
 	if(queueLength == 0){
@@ -82,15 +90,18 @@ function orderElevator(floor,direction){
             		this.elevatorOneFloor = item.floor;
                     this.elevatorOneDirection = item.direction;
                     document.getElementById("elevator-one").style.marginTop = marginArray[item.floor]+"%";
+                    nearest_floor = elevatorOneFloor;
             	}else if(selectedElevetor == 2){
                     this.elevatorTwoFloor = item.floor;
                     this.elevatorTwoDirection = item.direction;
                     document.getElementById("elevator-two").style.marginTop = marginArray[item.floor]+"%";
+                    nearest_floor = elevatorOneFloor;
                 }else if(selectedElevetor == 3)
                 {
                     this.elevatorThreeFloor = item.floor;
                     this.elevatorThreeDirection = item.direction;
                     document.getElementById("elevator-three").style.marginTop = marginArray[item.floor]+"%";
+                    nearest_floor = elevatorOneFloor;
                 }
 
                 this.requestedQueue.splice(index, 1);
